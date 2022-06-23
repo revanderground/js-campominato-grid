@@ -51,9 +51,14 @@ header{
     padding-left: 30px;
 }
 
-.button-box{
+.generation-box{
     width: 33,3%;
-    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.button-box{
     padding-top: 30px;
 
 }
@@ -74,12 +79,36 @@ div.square{
     cursor:crosshair;
 }
 
-div.square.azure{
+div.square2{
+
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    cursor:crosshair;
+}
+
+div.square3{
+
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    cursor:crosshair;
+}
+
+
+div.square.azure,
+div.square2.azure,
+div.square3.azure {
     background-color: rgb(0, 200, 255);
 }
 
+
+
 div.grid-container,
-div.square{
+div.square,
+div.square2,
+div.square3{
     border: 2px solid white;
 }
 
+.level-selector{
+    margin-top:40px;
+}
