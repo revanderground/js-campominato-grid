@@ -3,11 +3,12 @@ const gridContainer = document.getElementById('grid-container');
 
 const button = document.querySelector('#button')
 button.addEventListener('click', function(){
-    
+    gridContainer.innerHTML = "";
     const userChoice = document.getElementById('input-difficulty').value;
     if (userChoice == "level-1"){
            // ciclo per creare i quadratini
         for (let i=1; i < 101; i++){
+           
             const newSquare = createNewSquare();
             gridContainer.append(newSquare);
 
